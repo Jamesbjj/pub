@@ -1,5 +1,5 @@
 
-
+Main issue faced !
 
 src\main\java\com\example\demo\DemoApplication.java:3: error: package org.springframework.boot does not exist
 import org.springframework.boot.SpringApplication;
@@ -24,20 +24,23 @@ The compiler compliance specified is 1.8 but a JRE 20 is used
 
 Build path specifies execution environment JavaSE-1.8. There are no JREs installed in the workspace that are strictly compatible with this environment. 
 
+------------------------------------------
 
+I relaised i had downloaded java20
 
+I installed java 11 as mentioned on email / after the java 11 install the compiler errors fixed !
+but the errors for this remained 
 
-Java20 
-JRE20
-compiler maven 1.8
-application Runtime 11
+ symbol: class SpringBootApplication
+src\main\java\com\example\demo\DemoApplication.java:10: error: cannot find symbol
+                SpringApplication.run(DemoApplication.class, args);
+                ^
+----------------------------------------------
 
-
-Please allow me to explain my work via the next thank you 
-
-------------------
  
  4
+ 
+ commands for aws pipeline where i am happy to explain over video call
 
 
 Create an ECR repo on AWS via cmd or console
